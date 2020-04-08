@@ -4,14 +4,20 @@ import { withFormik, Form, Field } from "formik";
 class TodoForm extends React.Component {
     render() {
         return (
-            <Form>
-                <Field
-                    className="form-control"
-                    type="text"
-                    name="task"
-                    placeholder="Task"
-                />
-                <button type="submit" name="submit">
+            <Form className="form-inline">
+                <div className="form-group mb-2">
+                    <Field
+                        className="form-control"
+                        type="text"
+                        name="task"
+                        placeholder="Task"
+                    />
+                </div>
+                <button
+                    type="submit"
+                    name="submit"
+                    className="btn btn-primary mb-2"
+                >
                     Add Todo
                 </button>
 

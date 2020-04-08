@@ -2,6 +2,8 @@ import React from "react";
 import TodoForm from "./components/TodoForm.js";
 import TodoList from "./components/TodoList.js";
 
+import { Container, Row, Col } from "reactstrap";
+
 class App extends React.Component {
     // you will need a place to store your state in this component.
     // design `App` to be the parent component of your application.
@@ -51,15 +53,22 @@ class App extends React.Component {
     render() {
         //console.log(this.state.todos);
         return (
-            <div>
-                <h2>Welcome to your Todo App!</h2>
-                <TodoList
-                    todos={this.state.todos}
-                    toggleComplete={this.toggleComplete}
-                />
-                <TodoForm addTodo={this.addHandler} />
-                <button onClick={this.filterTodos}>Clear Completed</button>
-            </div>
+            <Container>
+                <Row>
+                    <Col md="12">
+                        <TodoForm addTodo={this.addHandler} />
+                        <button onClick={this.filterTodos}>
+                            Clear Completed
+                        </button>
+                    </Col>
+                    <Col md="12">
+                        <TodoList
+                            todos={this.state.todos}
+                            toggleComplete={this.toggleComplete}
+                        />
+                    </Col>
+                </Row>
+            </Container>
         );
     }
 }
