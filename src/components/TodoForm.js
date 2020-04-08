@@ -11,7 +11,10 @@ class TodoForm extends React.Component {
                     name="task"
                     placeholder="Task"
                 />
-                <button type="submit">Add Todo</button>
+                <button type="submit" name="submit">
+                    Add Todo
+                </button>
+
                 {/* {props.touched.task && props.errors.task ? (
                     <p className="error">{props.errors.task}</p>
                 ) : null} */}
