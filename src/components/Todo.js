@@ -8,14 +8,14 @@ const Todo = (props) => {
     };
 
     return (
-        <li
+        <td
             key={props.todo.id}
             data-id={props.todo.id}
             className={props.todo.completed ? "completed" : ""}
             onClick={onclickHandler}
         >
             {props.todo.task}
-        </li>
+        </td>
     );
 };
 

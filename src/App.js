@@ -12,7 +12,43 @@ class App extends React.Component {
     constructor() {
         super();
         this.state = {
-            todos: [],
+            todos: [
+                {
+                    task: "Organize Garage",
+                    id: 1528817077286,
+                    completed: false,
+                },
+                {
+                    task: "Bake Cookies",
+                    id: 1528817084358,
+                    completed: false,
+                },
+                {
+                    task: "Wash Dishes",
+                    id: 1528817084368,
+                    completed: false,
+                },
+                {
+                    task: "Feed dinosaur",
+                    id: 1528817084378,
+                    completed: false,
+                },
+                {
+                    task: "Wash the car",
+                    id: 1528817084388,
+                    completed: false,
+                },
+                {
+                    task: "Fixed the computer",
+                    id: 1528817084458,
+                    completed: false,
+                },
+                {
+                    task: "Fix the table",
+                    id: 1528817084558,
+                    completed: false,
+                },
+            ],
         };
     }
 
@@ -44,7 +80,8 @@ class App extends React.Component {
         });
     };
 
-    filterTodos = () => {
+    filterTodos = (key) => {
+        //console.log(key);
         this.setState({
             todos: this.state.todos.filter((todo) => !todo.completed),
         });
@@ -53,18 +90,16 @@ class App extends React.Component {
     render() {
         //console.log(this.state.todos);
         return (
-            <Container>
+            <Container className="App">
                 <Row>
-                    <Col md="12">
+                    <Col md="4">
                         <TodoForm addTodo={this.addHandler} />
-                        <button onClick={this.filterTodos}>
-                            Clear Completed
-                        </button>
                     </Col>
                     <Col md="12">
                         <TodoList
                             todos={this.state.todos}
                             toggleComplete={this.toggleComplete}
+                            filterTodos={this.filterTodos}
                         />
                     </Col>
                 </Row>

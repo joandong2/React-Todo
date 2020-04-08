@@ -1,7 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.App {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
 .form-inline .form-control {
     margin-right: 10px;
 }
 
-.completed {
+.results {
+    margin-top: 40px;
+}
+
+.results .add-ons .col:last-child {
+    text-align: right;
+}
+
+table {
+    margin-top: 20px;
+}
+
+td.completed,
+.btn {
+    color: white;
+    background: #3a6186; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #89253e,
+        #3a6186
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #89253e,
+        #3a6186
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: unset;
+    transition: all 1000ms;
+}
+
+.btn:hover {
+    background: #89253e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #3a6186,
+        #89253e
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #3a6186,
+        #89253e
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: all 1000ms;
+}
+
+.error {
     color: red;
+    margin-left: 5px;
 }
