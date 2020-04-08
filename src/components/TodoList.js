@@ -20,7 +20,7 @@ class TodoList extends React.Component {
     };
 
     render() {
-        console.log(this.state.key);
+        // console.log(this.state.key);
         return (
             <div className="results">
                 <Row className="add-ons">
@@ -40,7 +40,7 @@ class TodoList extends React.Component {
                             onClick={this.props.filterTodos}
                             size="sm"
                         >
-                            Clear Completed
+                            clear completed
                         </Button>
                     </Col>
                 </Row>
