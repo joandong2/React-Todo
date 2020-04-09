@@ -24,28 +24,8 @@ class App extends React.Component {
                     completed: false,
                 },
                 {
-                    task: "Wash Dishes",
-                    id: 1528817084368,
-                    completed: false,
-                },
-                {
                     task: "Feed dinosaur",
                     id: 1528817084378,
-                    completed: false,
-                },
-                {
-                    task: "Wash the car",
-                    id: 1528817084388,
-                    completed: false,
-                },
-                {
-                    task: "Fixed the computer",
-                    id: 1528817084458,
-                    completed: false,
-                },
-                {
-                    task: "Fix the table",
-                    id: 1528817084558,
                     completed: false,
                 },
             ],
