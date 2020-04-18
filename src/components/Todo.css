@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.App {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+.form-inline .form-control {
+    margin-right: 10px;
+}
+
+.results {
+    margin-top: 40px;
+}
+
+.results .add-ons .col:last-child {
+    text-align: right;
+}
+
+table {
+    margin-top: 20px;
+}
+
+.btn {
+    font-size: 0.9rem;
+}
+
+td.completed,
+.btn {
+    color: #000;
+    background: #50c9c3; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #96deda,
+        #50c9c3
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #96deda,
+        #50c9c3
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border: unset;
+}
+
+.btn-danger.focus,
+.btn-danger:focus,
+.btn-danger:active {
+    color: #fff;
+    background-color: unset;
+    border-color: unset !important;
+    box-shadow: unset;
+}
+
+.error {
+    color: red;
+    margin-left: 5px;
+}
